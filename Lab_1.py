@@ -1,15 +1,15 @@
-def print_rec(n, k):
-    for i in range(0, n):
-        for j in range(0, k):
-            print("*", end=" ")
-        print()
-    print()
-
-
-def lab_1() :
+def rec(b):
     try:
-        print_rec(3, 4)
-    except Exception as ex:
-        print('Eror information {ex}')
+        counter = 0
+        for i in range(1, b+1):
+            if b % i == 0:
+                counter += 1
+                if counter == 2:
+                    print(f'{b} є простим числом')
 
-lab_1()
+                else:
+                    print(f'{b} не є простим числом')
+number = int(input("number->"))
+rec(number)
+except Exception as ex:
+print(f'Error information: {ex}')

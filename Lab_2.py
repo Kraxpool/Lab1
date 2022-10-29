@@ -1,7 +1,9 @@
-def fac(n):
-    if n == 0:
-        return 1
-    return fac(n - 1) * n
+import math
+def cub (b):
+    return math(b,3)
+print(int(cube(5))
 
-
-print(fac(4))
+try:
+    cube(4)
+except Exception as ex:
+       print(f'Error information: {ex}')
